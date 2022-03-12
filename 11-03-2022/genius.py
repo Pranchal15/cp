@@ -17,17 +17,17 @@ for i in range(t):
             unat = 0
             print('YES')
             print(correct,incorrect,unat)
-    elif x%3==1 and (div)+3<=n:
-        correct = div+1
+    elif x%3==1 and ((x+2)/3)<=n:
+        correct = int((x+2)/3)
         incorrect =2
         unat=n-correct-incorrect
         print('YES')
         print(correct,incorrect,unat)
-    elif x%3==2 and div+2<=n:
-        correct=div+1
+    elif x%3==2 and ((x+1)/3)<=n:
+        correct=int((x+1)/3)
         incorrect=1
         unat=n-correct-incorrect
         print('YES')
         print(correct,incorrect,unat)
-    else : print('NO')
+    else : print('NO') 
     
