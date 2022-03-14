@@ -10,7 +10,8 @@ for i in range(t):
             print('YES')
             print(correct,incorrect,unat)
         elif x==0 and n<4:
-            print('NO')
+            print('YES')
+            print(0,0,n)
         else:
             correct = div
             incorrect=0
@@ -21,13 +22,17 @@ for i in range(t):
         correct = int((x+2)/3)
         incorrect =2
         unat=n-correct-incorrect
-        print('YES')
-        print(correct,incorrect,unat)
+        if correct >= 0 and incorrect >=0 and unat >=0:
+            print('YES')
+            print(correct,incorrect,unat)
+        else:print('NO')
     elif x%3==2 and ((x+1)/3)<=n:
         correct=int((x+1)/3)
         incorrect=1
         unat=n-correct-incorrect
-        print('YES')
-        print(correct,incorrect,unat)
+        if correct >= 0 and incorrect >=0 and unat >=0:
+            print('YES')
+            print(correct,incorrect,unat)
+        else:print('NO')
     else : print('NO') 
     
