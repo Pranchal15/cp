@@ -11,7 +11,7 @@ def func(a):
         else:
             odd+=1
             odds.append(j)
-    if odd >2:
+    if odd >=2:
 
         if odd%2==0:
             if len(odds)==0:
