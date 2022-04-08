@@ -20,8 +20,10 @@ def Manacher(string):
         else:
             LPS[i] = 0
         try:
-            while string[i + 1 + LPS[i]] == string[i - 1 - LPS[i]]:
-                LPS[i] += 1
+            if (i+1+LPS[i]>0) and (0<i-1-LPS[i]<len(string)):
+
+                while string[i + 1 + LPS[i]] == string[i - 1 - LPS[i]]:
+                    LPS[i] += 1
         except:
             pass
 
