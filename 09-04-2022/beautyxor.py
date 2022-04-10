@@ -1,9 +1,14 @@
 t = int(input())
 for i in range(t):
     n = int(input())
-    b=1
-    for j in range(2,n+1,2):
-        b = b^j
-        if j+1 < n+1:
-            b=b&(j+1)
-    print(b)
+    rem = n%4
+    if rem ==0:
+        print(n+3)
+        continue
+    elif rem ==1:
+        print(n)
+        continue
+    elif rem==2 or rem ==3:
+        print(3)
+        continue
+    
